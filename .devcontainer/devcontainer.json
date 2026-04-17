@@ -1,0 +1,16 @@
+{
+  "name": "smart-hotel-management",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "forwardPorts": [3000, 5000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Frontend",
+      "onAutoForward": "openPreview"
+    },
+    "5000": {
+      "label": "Backend API",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "cd backend && npm install"
+}
